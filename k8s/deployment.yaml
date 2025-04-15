@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: hello-python
-        image: maxmancera1/hello-python-k8s:latest
+        image: hello-python-local:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 5000
         resources:
